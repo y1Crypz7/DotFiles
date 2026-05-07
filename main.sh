@@ -43,6 +43,7 @@ echo ">>> [2/6] Atualizando pacotes e instalando dependências..."
 
 sudo pacman -Syy --noconfirm
 sudo pacman -S --noconfirm --needed \
+    unzip \
     kitty \
     starship \
     zsh \
