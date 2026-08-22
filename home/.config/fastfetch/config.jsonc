@@ -1,0 +1,42 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+
+  "logo": {
+    "type": "command-raw",
+    "source": "bash ~/confifastfetch/som.sh",
+    //"position": "top",
+    "width": 12,
+    "height": 6
+  },
+
+  "modules": [
+    "title",
+    "separator",
+
+    { "type": "custom", "format": "┌────────────────────────────────────────────┐" },
+    { "type": "custom", "format": "│\u001b[1;34mOSinfo\u001b[0m" },
+    { "type": "os",       "key": "│OS",       "keyColor": "38;5;39" },
+    { "type": "host",     "key": "│Host",     "keyColor": "38;5;75" },
+    { "type": "uptime",   "key": "│Uptime",   "keyColor": "38;5;220" },
+    { "type": "packages", "key": "│Packages", "keyColor": "38;5;84" },
+    { "type": "shell",    "key": "│Shell",    "keyColor": "38;5;213" },
+    { "type": "terminal", "key": "│Terminal", "keyColor": "38;5;203" },
+
+    { "type": "custom", "format": "├────────────────────────────────────────────┤" },
+    { "type": "custom", "format": "│\u001b[1;32mHardware\u001b[0m" },
+    { "type": "cpu",    "key": "│CPU",    "keyColor": "38;5;208" },
+    { "type": "gpu",    "key": "│GPU",    "keyColor": "38;5;226" },
+    { "type": "memory", "key": "│Memory", "keyColor": "38;5;51" },
+
+    { "type": "custom", "format": "├────────────────────────────────────────────┤" },
+    { "type": "custom", "format": "│\u001b[1;35mMysc\u001b[0m" },
+    { "type": "swap",    "key": "│Swap",    "keyColor": "38;5;118" },
+    { "type": "disk",    "key": "│Disk (/)", "keyColor": "38;5;33" },
+    { "type": "battery", "key": "│Battery (SR Real Battery)", "keyColor": "38;5;201" },
+    { "type": "locale",  "key": "│Locale",  "keyColor": "38;5;255" },
+
+    { "type": "custom", "format": "└────────────────────────────────────────────┘" },
+
+    { "type": "colors", "symbol": "circle" }
+  ]
+}

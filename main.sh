@@ -48,7 +48,8 @@ sudo pacman -S --noconfirm --needed \
     starship \
     zsh \
     curl \
-    git
+    git \
+    fastfetch
 
 echo "    Pacotes instalados!"
 
@@ -108,6 +109,17 @@ echo "    kitty.conf copiado!"
 mkdir -p "$HOME/.config"
 cp "$DOTFILES_DIR/home/.config/starship.toml" "$HOME/.config/starship.toml"
 echo "    starship.toml copiado!"
+
+# fastfetch config
+mkdir -p "$HOME/.config/fastfetch"
+cp "$DOTFILES_DIR/home/.config/fastfetch/config.jsonc" "$HOME/.config/fastfetch/config.jsonc"
+echo "  ✔ fastfetch config.jsonc copiado!"
+
+# logo ASCII customizado
+mkdir -p "$HOME/confifastfetch"
+cp "$DOTFILES_DIR/home/confifastfetch/som.sh" "$HOME/confifastfetch/som.sh"
+chmod +x "$HOME/confifastfetch/som.sh"
+echo "  ✔ som.sh copiado!"
 
 # =============================================================================
 # 5. DEFINIR ZSH COMO SHELL PADRÃO
